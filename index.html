@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Redirect</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h2, label, p {
+            margin-bottom: 10px;
+        }
+
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            // Replace 'yourPassword' with the actual password
+            const correctPassword = 'TN';
+
+            // Get the entered password from the input field
+            const enteredPassword = document.getElementById('password').value;
+
+            // Check if the entered password is correct
+            if (enteredPassword === correctPassword) {
+                // Redirect to the specified URL
+                window.location.href = '/pdfbomb/SecuredPDFBomb-OnTop-Fedoralovesu-29319239129912943828991248918943894189384919345356450349231453456635634563456345634563455467456755123.html';
+            } else {
+                // Display an error message
+                document.getElementById('error-message').innerText = 'Incorrect password. Please try again.';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Password Redirect</h2>
+    <label for="password">Enter Password:</label>
+    <input type="password" id="password" required>
+    <button onclick="checkPassword()">Submit</button>
+    <p id="error-message" style="color: red;"></p>
+</body>
+</html>
