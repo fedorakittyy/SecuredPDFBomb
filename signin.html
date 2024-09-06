@@ -30,18 +30,18 @@
     </style>
     <script>
         function checkPassword() {
-            // Replace 'yourPassword' with the actual password
+            
             const correctPassword = 'TN';
 
-            // Get the entered password from the input field
+            
             const enteredPassword = document.getElementById('password').value;
 
-            // Check if the entered password is correct
+            
             if (enteredPassword === correctPassword) {
-                // Redirect to the specified URL
+               
                 window.location.href = 'main.html';
             } else {
-                // Display an error message
+                
                 document.getElementById('error-message').innerText = 'Incorrect password. Please try again.';
             }
         }
